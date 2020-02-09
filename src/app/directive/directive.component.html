@@ -1,0 +1,22 @@
+<p >directive works!</p>
+<div >
+    <input type="text" appCustom ="50"/>
+</div>
+<div class="row" *ngIf="bool; else templatetag">
+    <div class="col-md-12">
+        this is structural directive
+    </div>
+</div>
+<div><button (click)="toggle()">Toggle Data</button></div>
+
+<div class="row" *appStructuralDirective="false">
+        <div class="col-md-12">
+            <ol>
+                <li *ngFor="let item of mobiles">
+                    {{item}}
+                </li>
+            </ol>
+        </div>
+</div>
+<ng-template #templatetag>This is ng template code</ng-template>
+
