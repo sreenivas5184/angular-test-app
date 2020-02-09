@@ -12,7 +12,6 @@ export class ErrorService implements HttpInterceptor {
   getData(): string {
     return 'Sreenivas';
   }
-  // Sreenivas
   getboolean(): boolean {
     return true;
   }
